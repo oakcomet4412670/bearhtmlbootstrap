@@ -19,14 +19,52 @@
     <div class="Container">
         <!-- Row 1 - heading -->
         <div class="row">
-            <div class="col text-center">
-                <h1>Page 3</h1>
-                <a href="index.html">Home</a>
-                <a href="bears.html">More Bear Info</a>
-                <a href="page3.html">third page</a>
-                <a href="navbar.html">navbar page</a>
-            </div>
-        </div>
+			<div class="col text-center">
+				<h1>Introduction To Bootstrap</h1>
+			</div>
+		</div>
+		<!-- start navbar code -->
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">Home</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="bears.html">Bear</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="page3.html">3rd page</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+								aria-expanded="false">
+								Dropdown
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="navbar.html">4th page</a></li>
+								<li><a class="dropdown-item" href="index.html">Home again...</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" aria-disabled="true">Disabled</a>
+						</li>
+					</ul>
+					<form class="d-flex" role="search">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+						<button class="btn btn-outline-success" type="submit">Search</button>
+					</form>
+				</div>
+			</div>
+		</nav>
         <div class="row">
             <div class="col-sm-6">
                 <p>
@@ -34,15 +72,18 @@
                     suscipit ex et urna
                     fermentum, at tempor arcu ullamcorper. Proin felis nulla, consequat vitae euismod et, posuere non
                     enim. Nulla efficitur
-                    porta gravida. Integer eleifend tristique pretium. Sed lobortis lectus nec nisl cursus semper. lacus, vitae semper sem lorem ac libero. Duis sit amet hendrerit purus, eu interdum risus. Integer
+                    porta gravida. Integer eleifend tristique pretium. Sed lobortis lectus nec nisl cursus semper.
+                    lacus, vitae semper sem lorem ac libero. Duis sit amet hendrerit purus, eu interdum risus. Integer
                     suscipit ex et urna
                     fermentum, at tempor arcu ullamcorper. Proin felis nulla, consequat vitae euismod et, posuere non
                     enim. Nulla efficitur
-                    porta gravida. Integer eleifend tristique pretium. Sed lobortis lectus nec nisl cursus semper. lacus, vitae semper sem lorem ac libero. Duis sit amet hendrerit purus, eu interdum risus. Integer
+                    porta gravida. Integer eleifend tristique pretium. Sed lobortis lectus nec nisl cursus semper.
+                    lacus, vitae semper sem lorem ac libero. Duis sit amet hendrerit purus, eu interdum risus. Integer
                     suscipit ex et urna
                     fermentum, at tempor arcu ullamcorper. Proin felis nulla, consequat vitae euismod et, posuere non
                     enim. Nulla efficitur
-                    porta gravida. Integer eleifend tristique pretium. Sed lobortis lectus nec nisl cursus semper. lacus, vitae semper sem lorem ac libero. Duis sit amet hendrerit purus, eu interdum risus. Integer
+                    porta gravida. Integer eleifend tristique pretium. Sed lobortis lectus nec nisl cursus semper.
+                    lacus, vitae semper sem lorem ac libero. Duis sit amet hendrerit purus, eu interdum risus. Integer
                     suscipit ex et urna
                     fermentum, at tempor arcu ullamcorper. Proin felis nulla, consequat vitae euismod et, posuere non
                     enim. Nulla efficitur
@@ -54,20 +95,21 @@
             </div>
         </div>
         <div class="row">
-        <div class="col-sm-4">
-            <img src="img/pig.jpg" alt="pig" class="img-fluid">
-            <h2 class="text-center">Pigs</h2>
-        </div>
-        <div class="col-sm-4">
-            <img src="img/pig.jpg" alt="pig" class="img-fluid">
-            <h2 class="text-center">Pigs</h2>
-        </div>
-        <div class="col-sm-4">
-            <img src="img/pig.jpg" alt="pig" class="img-fluid">
-            <h2 class="text-center">Pigs</h2>
-        </div>
+            <div class="col-sm-4">
+                <img src="img/pig.jpg" alt="pig" class="img-fluid">
+                <h2 class="text-center">Pigs</h2>
+            </div>
+            <div class="col-sm-4">
+                <img src="img/pig.jpg" alt="pig" class="img-fluid">
+                <h2 class="text-center">Pigs</h2>
+            </div>
+            <div class="col-sm-4">
+                <img src="img/pig.jpg" alt="pig" class="img-fluid">
+                <h2 class="text-center">Pigs</h2>
+            </div>
         </div>
     </div>
+    <script src="js/bootstrap.bundle.js"></script>
 </body>
 
 </html>

@@ -3,14 +3,14 @@
 
 <head>
     <title>CSS - More Selectors</title>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- My Style -->
-	<link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -20,13 +20,51 @@
         <!-- Row 1 - heading -->
         <div class="row">
             <div class="col text-center">
-                <h1>Big Heading - Center The text</h1>
-                <a href="index.html">Home</a>
-                <a href="bears.html">More Bear Info</a>
-                <a href="page3.html">third page</a>
-                <a href="navbar.html">navbar page</a>
+                <h1>Introduction To Bootstrap</h1>
             </div>
         </div>
+        <!-- start navbar code -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="bears.html">Bear</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page3.html">3rd page</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="navbar.html">4th page</a></li>
+                                <li><a class="dropdown-item" href="index.html">Home again...</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
 
         <!-- Row 2- 50/50 split -->
         <div class="row">
@@ -159,7 +197,7 @@
 
         </div>
     </div> <!--close container -->
-
+    <script src="js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
